@@ -26,6 +26,9 @@ jar {
     version =  '0.1.0'
 }
 
+//'stage' required to satisfy heroku
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
