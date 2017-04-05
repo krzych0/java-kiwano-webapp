@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -jar webapp/build/libs/webapp-service-0.1.0.jar
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar webapp/build/libs/webapp-service-0.1.0.jar --spring.profiles.active=prod  --spring.data.mongodb.uri=$MONGOLAB_URI

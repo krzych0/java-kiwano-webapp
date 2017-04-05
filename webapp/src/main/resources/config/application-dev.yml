@@ -1,0 +1,10 @@
+server:
+    port: 8080
+
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/project4db"
+      database: project4db
