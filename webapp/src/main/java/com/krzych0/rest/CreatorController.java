@@ -1,5 +1,6 @@
 package com.krzych0.rest;
 
+import com.krzych0.service.CreatorService;
 import com.krzych0.service.TemperatureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,9 +21,13 @@ public class CreatorController {
   @Autowired
   TemperatureService service;
 
+  @Autowired
+  CreatorService creatorService;
+
   @RequestMapping(value = "/")
   public Api api(@RequestParam(value = "name", defaultValue = "World") String name) {
     service.doWork();
+    creatorService.login();
     return new Api(counter.incrementAndGet(),
         String.format(template, name));
   }
