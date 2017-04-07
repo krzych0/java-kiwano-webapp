@@ -14,12 +14,12 @@ public class Application implements CommandLineRunner {
 
   public static void main(String[] args) {
 
-    //SpringApplication.run(Application.class, args);
     SpringApplication application = new SpringApplication(Application.class);
     SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
 
     //add default profile if no profile has been set
     addDefaultProfile(application, source);
+
     application.run(args);
   }
 
