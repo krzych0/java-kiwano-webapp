@@ -32,7 +32,8 @@ task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web",
+    compile("org.slf4j:slf4j-api:1.7.5",
+            "org.springframework.boot:spring-boot-starter-web",
             "org.springframework.boot:spring-boot-starter-data-mongodb",
             "org.springframework.security:spring-security-web:4.2.2.RELEASE",
             "org.springframework.security:spring-security-config:4.2.2.RELEASE")
