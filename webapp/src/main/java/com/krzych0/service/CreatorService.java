@@ -16,4 +16,8 @@ public class CreatorService {
   public void login() {
     provider.login();
   }
+
+  public void subscribe(String webhookUrl) {
+    provider.subscribe(webhookUrl);
+  }
 }
