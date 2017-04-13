@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 3000
 
 spring:
   profiles:
@@ -8,3 +8,6 @@ data:
   mongodb:
     #uri: set via env variable
     database: project4db
+
+  webhook:
+    #url: set via env variable

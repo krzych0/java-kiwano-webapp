@@ -25,6 +25,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
   @Override
   protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {
     String authToken = request.getHeader("x-access-token");
+    if (authToken == null) {
+      chain.doFilter(request, response);
+      return;
+    }
     Authentication authentication = authenticationManager.authenticate(new JwtAuthenticationToken(authToken));
     SecurityContextHolder.getContext().setAuthentication(authentication);
     chain.doFilter(request, response);

@@ -37,8 +37,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .addFilterBefore(new JwtAuthenticationFilter(authenticationManager()), AbstractPreAuthenticatedProcessingFilter.class)
         .addFilterBefore(new BasicAuthenticationFilter(authenticationManager()), BasicAuthenticationFilter.class)
         .authorizeRequests()
-        .antMatchers("/**").permitAll();
-//        .antMatchers("/**").hasRole("USER");
+        .antMatchers("/notifyClientConnected").permitAll()
+        .antMatchers("/notifyClientDisconnected").permitAll()
+        .antMatchers("/notifyClientUpdated").permitAll()
+        .antMatchers("/notifyObservation").permitAll()
+        .antMatchers("/**").authenticated();
+
   }
 
 }
