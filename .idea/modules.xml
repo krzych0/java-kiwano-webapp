@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kiwano.iml" filepath="$PROJECT_DIR$/.idea/modules/kiwano.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kiwano_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kiwano_main.iml" group="kiwano" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kiwano_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kiwano_test.iml" group="kiwano" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp.iml" group="webapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp/webapp.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp/webapp.iml" group="webapp" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp/webapp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp/webapp_main.iml" group="webapp" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp/webapp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp/webapp_test.iml" group="webapp" />
     </modules>
